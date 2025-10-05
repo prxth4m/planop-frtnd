@@ -60,27 +60,6 @@ const Dashboard = () => {
 
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <TabsTrigger value="lightcurve">Lightcurve</TabsTrigger>
-                </TooltipTrigger>
-                <TooltipContent className="max-w-sm p-4 bg-card/95 backdrop-blur-sm border-primary/20">
-                  <div className="space-y-2">
-                    <p className="font-semibold text-primary">Lightcurve Classifier</p>
-                    <p className="text-sm text-muted-foreground">
-                      Analyze time-series brightness measurements to detect planetary transits using CNN model.
-                    </p>
-                    <div className="pt-2 border-t border-border/50">
-                      <p className="text-xs font-medium mb-1">Input Accepts:</p>
-                      <p className="text-xs text-muted-foreground">• CSV files with flux data (3,197 points)</p>
-                      <p className="text-xs text-muted-foreground">• exoTrain.csv or exoTest.csv format</p>
-                      <p className="text-xs text-muted-foreground">• LABEL column + FLUX.1 to FLUX.3197</p>
-                      <p className="text-xs text-muted-foreground">• Single or multiple lightcurve files</p>
-                    </div>
-                  </div>
-                </TooltipContent>
-              </Tooltip>
-
-              <Tooltip>
-                <TooltipTrigger asChild>
                   <TabsTrigger value="classifier">AI Classifier</TabsTrigger>
                 </TooltipTrigger>
                 <TooltipContent className="max-w-sm p-4 bg-card/95 backdrop-blur-sm border-primary/20">
@@ -95,6 +74,27 @@ const Dashboard = () => {
                       <p className="text-xs text-muted-foreground">• Manual entry of exoplanet features</p>
                       <p className="text-xs text-muted-foreground">• Orbital period, radius, mass, temperature</p>
                       <p className="text-xs text-muted-foreground">• Single predictions or batch processing</p>
+                    </div>
+                  </div>
+                </TooltipContent>
+              </Tooltip>
+
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <TabsTrigger value="lightcurve">Lightcurve</TabsTrigger>
+                </TooltipTrigger>
+                <TooltipContent className="max-w-sm p-4 bg-card/95 backdrop-blur-sm border-primary/20">
+                  <div className="space-y-2">
+                    <p className="font-semibold text-primary">Lightcurve Classifier</p>
+                    <p className="text-sm text-muted-foreground">
+                      Analyze time-series brightness measurements to detect planetary transits using CNN model.
+                    </p>
+                    <div className="pt-2 border-t border-border/50">
+                      <p className="text-xs font-medium mb-1">Input Accepts:</p>
+                      <p className="text-xs text-muted-foreground">• CSV files with flux data (3,197 points)</p>
+                      <p className="text-xs text-muted-foreground">• exoTrain.csv or exoTest.csv format</p>
+                      <p className="text-xs text-muted-foreground">• LABEL column + FLUX.1 to FLUX.3197</p>
+                      <p className="text-xs text-muted-foreground">• Single or multiple lightcurve files</p>
                     </div>
                   </div>
                 </TooltipContent>
