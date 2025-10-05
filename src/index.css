@@ -109,4 +109,10 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Force white background for active tabs */
+  button[data-state="active"] {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
 }
