@@ -99,6 +99,12 @@ All colors MUST be HSL.
     background-size: 200% 200%;
     background-position: 0% 0%, 40% 60%, 130% 270%, 70% 100%, 200% 50%, 100% 180%, 150% 220%;
   }
+
+  /* Force white background for active tabs */
+  button[data-state="active"] {
+    background-color: white !important;
+    color: black !important;
+  }
 }
 
 @layer base {
@@ -108,11 +114,5 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-  }
-  
-  /* Force white background for active tabs */
-  button[data-state="active"] {
-    background-color: #ffffff !important;
-    color: #000000 !important;
   }
 }
